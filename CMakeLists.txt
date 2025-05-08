@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 4.0.1)
-
 project(cmake-sdl2-starter)
+
+# C++ standards
+set(CMAKE_CXX_STANDARD           23)
+set(CMAKE_CXX_STANDARD_REQUIRED YES)
+set(CMAKE_CXX_EXTENSIONS        OFF)
 
 add_executable(${PROJECT_NAME} main.cpp)
 
