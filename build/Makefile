@@ -124,24 +124,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named myprogram
+# Target rules for targets named cmake-sdl2-starter
 
 # Build rule for target.
-myprogram: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myprogram
-.PHONY : myprogram
+cmake-sdl2-starter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake-sdl2-starter
+.PHONY : cmake-sdl2-starter
 
 # fast build rule for target.
-myprogram/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprogram.dir/build.make CMakeFiles/myprogram.dir/build
-.PHONY : myprogram/fast
+cmake-sdl2-starter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake-sdl2-starter.dir/build.make CMakeFiles/cmake-sdl2-starter.dir/build
+.PHONY : cmake-sdl2-starter/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprogram.dir/build.make CMakeFiles/myprogram.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake-sdl2-starter.dir/build.make CMakeFiles/cmake-sdl2-starter.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -149,7 +149,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprogram.dir/build.make CMakeFiles/myprogram.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake-sdl2-starter.dir/build.make CMakeFiles/cmake-sdl2-starter.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -157,7 +157,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprogram.dir/build.make CMakeFiles/myprogram.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake-sdl2-starter.dir/build.make CMakeFiles/cmake-sdl2-starter.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -169,7 +169,7 @@ help:
 	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... myprogram"
+	@echo "... cmake-sdl2-starter"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
