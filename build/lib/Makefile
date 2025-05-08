@@ -87,21 +87,21 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aliffamir/repos/cmake-sdl2-starter/build/CMakeFiles /Users/aliffamir/repos/cmake-sdl2-starter/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/aliffamir/repos/cmake-sdl2-starter/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/aliffamir/repos/cmake-sdl2-starter/build/CMakeFiles /Users/aliffamir/repos/cmake-sdl2-starter/build/lib//CMakeFiles/progress.marks
+	cd /Users/aliffamir/repos/cmake-sdl2-starter/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aliffamir/repos/cmake-sdl2-starter/build/CMakeFiles 0
 .PHONY : all
 
 # The main codegen target
 codegen: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aliffamir/repos/cmake-sdl2-starter/build/CMakeFiles /Users/aliffamir/repos/cmake-sdl2-starter/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 codegen
+	cd /Users/aliffamir/repos/cmake-sdl2-starter/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/aliffamir/repos/cmake-sdl2-starter/build/CMakeFiles /Users/aliffamir/repos/cmake-sdl2-starter/build/lib//CMakeFiles/progress.marks
+	cd /Users/aliffamir/repos/cmake-sdl2-starter/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/codegen
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aliffamir/repos/cmake-sdl2-starter/build/CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/aliffamir/repos/cmake-sdl2-starter/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -110,68 +110,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/aliffamir/repos/cmake-sdl2-starter/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/aliffamir/repos/cmake-sdl2-starter/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/aliffamir/repos/cmake-sdl2-starter/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named cmake-sdl2-starter
+# Convenience name for target.
+lib/CMakeFiles/mylib.dir/rule:
+	cd /Users/aliffamir/repos/cmake-sdl2-starter/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/mylib.dir/rule
+.PHONY : lib/CMakeFiles/mylib.dir/rule
 
-# Build rule for target.
-cmake-sdl2-starter: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake-sdl2-starter
-.PHONY : cmake-sdl2-starter
-
-# fast build rule for target.
-cmake-sdl2-starter/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake-sdl2-starter.dir/build.make CMakeFiles/cmake-sdl2-starter.dir/build
-.PHONY : cmake-sdl2-starter/fast
-
-#=============================================================================
-# Target rules for targets named mylib
-
-# Build rule for target.
-mylib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mylib
+# Convenience name for target.
+mylib: lib/CMakeFiles/mylib.dir/rule
 .PHONY : mylib
 
 # fast build rule for target.
 mylib/fast:
-	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/mylib.dir/build.make lib/CMakeFiles/mylib.dir/build
+	cd /Users/aliffamir/repos/cmake-sdl2-starter/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/mylib.dir/build.make lib/CMakeFiles/mylib.dir/build
 .PHONY : mylib/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+lib.o: lib.cpp.o
+.PHONY : lib.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake-sdl2-starter.dir/build.make CMakeFiles/cmake-sdl2-starter.dir/main.cpp.o
-.PHONY : main.cpp.o
+lib.cpp.o:
+	cd /Users/aliffamir/repos/cmake-sdl2-starter/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/mylib.dir/build.make lib/CMakeFiles/mylib.dir/lib.cpp.o
+.PHONY : lib.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+lib.i: lib.cpp.i
+.PHONY : lib.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake-sdl2-starter.dir/build.make CMakeFiles/cmake-sdl2-starter.dir/main.cpp.i
-.PHONY : main.cpp.i
+lib.cpp.i:
+	cd /Users/aliffamir/repos/cmake-sdl2-starter/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/mylib.dir/build.make lib/CMakeFiles/mylib.dir/lib.cpp.i
+.PHONY : lib.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+lib.s: lib.cpp.s
+.PHONY : lib.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake-sdl2-starter.dir/build.make CMakeFiles/cmake-sdl2-starter.dir/main.cpp.s
-.PHONY : main.cpp.s
+lib.cpp.s:
+	cd /Users/aliffamir/repos/cmake-sdl2-starter/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/mylib.dir/build.make lib/CMakeFiles/mylib.dir/lib.cpp.s
+.PHONY : lib.cpp.s
 
 # Help Target
 help:
@@ -182,11 +170,10 @@ help:
 	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... cmake-sdl2-starter"
 	@echo "... mylib"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... lib.o"
+	@echo "... lib.i"
+	@echo "... lib.s"
 .PHONY : help
 
 
@@ -198,6 +185,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/aliffamir/repos/cmake-sdl2-starter/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

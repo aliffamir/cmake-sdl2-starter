@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/aliffamir/repos/cmake-sdl2-starter/lib
+CXX_INCLUDES = 
 
 CXX_FLAGSarm64 =  -arch arm64
 
