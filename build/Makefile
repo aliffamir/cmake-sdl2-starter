@@ -136,6 +136,43 @@ cmake-sdl2-starter/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake-sdl2-starter.dir/build.make CMakeFiles/cmake-sdl2-starter.dir/build
 .PHONY : cmake-sdl2-starter/fast
 
+#=============================================================================
+# Target rules for targets named mylib
+
+# Build rule for target.
+mylib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mylib
+.PHONY : mylib
+
+# fast build rule for target.
+mylib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/build
+.PHONY : mylib/fast
+
+lib.o: lib.cpp.o
+.PHONY : lib.o
+
+# target to build an object file
+lib.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/lib.cpp.o
+.PHONY : lib.cpp.o
+
+lib.i: lib.cpp.i
+.PHONY : lib.i
+
+# target to preprocess a source file
+lib.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/lib.cpp.i
+.PHONY : lib.cpp.i
+
+lib.s: lib.cpp.s
+.PHONY : lib.s
+
+# target to generate assembly for a file
+lib.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mylib.dir/build.make CMakeFiles/mylib.dir/lib.cpp.s
+.PHONY : lib.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -170,6 +207,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cmake-sdl2-starter"
+	@echo "... mylib"
+	@echo "... lib.o"
+	@echo "... lib.i"
+	@echo "... lib.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

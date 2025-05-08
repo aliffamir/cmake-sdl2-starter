@@ -57,4 +57,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/cmake-sdl2-starter.dir/DependInfo.cmake"
+  "CMakeFiles/mylib.dir/DependInfo.cmake"
   )
