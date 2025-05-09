@@ -6,6 +6,7 @@ This repo serves as a starter template for building a C++ project with **CMake**
 It provides a minimal `CMakeLists.txt` that sets up compilation and linking for SDL2 and SDL2_image, assuming the libraries are installed via **Homebrew** and symlinked into local `include` and `lib` directories inside the project.
 
 ## 📁 Project Structure
+```bash
 .
 ├── build/             # Out-of-source build directory
 ├── include/           # Local include folder
@@ -18,6 +19,7 @@ It provides a minimal `CMakeLists.txt` that sets up compilation and linking for 
 │   └── main.cpp
 ├── CMakeLists.txt     # Build configuration
 └── README.md
+```
 
 ## 🛠️ Setup Instructions
 
