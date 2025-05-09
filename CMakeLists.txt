@@ -20,6 +20,7 @@ add_executable(${PROJECT_NAME} ${SRC_FILES})
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
     ${CMAKE_SOURCE_DIR}/lib/SDL2_image/libSDL2_image.dylib
+    ${CMAKE_SOURCE_DIR}/lib/SDL2/libSDL2.dylib
 )
 
 
