@@ -11,7 +11,7 @@ set(CMAKE_CXX_EXTENSIONS        OFF)
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
 # Gather source files to compile - use wildcard *.cpp
-file(GLOB_RECURSE SRC_FILES ${CMAKE_SOURCE}/src/*.cpp)
+file(GLOB_RECURSE SRC_FILES ${CMAKE_SOURCE_DIR}/src/*.cpp)
 
 # Create executables
 add_executable(${PROJECT_NAME} ${SRC_FILES})
