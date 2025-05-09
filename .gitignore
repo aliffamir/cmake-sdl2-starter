@@ -88,3 +88,11 @@ Temporary Items
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,c++
+
+# Ignore build directory
+build/
+
+# Ignore SDL2 symlinks in include and lib directories
+include/SDL2
+include/SDL2_image
+lib/SDL2_image
