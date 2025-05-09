@@ -1,8 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/aliffamir/repos/cmake-sdl2-starter/build/cmake_install.cmake",
-		"/Users/aliffamir/repos/cmake-sdl2-starter/build/lib/cmake_install.cmake"
+		"/Users/aliffamir/repos/cmake-sdl2-starter/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

@@ -72,30 +72,30 @@ include CMakeFiles/cmake-sdl2-starter.dir/flags.make
 CMakeFiles/cmake-sdl2-starter.dir/codegen:
 .PHONY : CMakeFiles/cmake-sdl2-starter.dir/codegen
 
-CMakeFiles/cmake-sdl2-starter.dir/main.cpp.o: CMakeFiles/cmake-sdl2-starter.dir/flags.make
-CMakeFiles/cmake-sdl2-starter.dir/main.cpp.o: /Users/aliffamir/repos/cmake-sdl2-starter/main.cpp
-CMakeFiles/cmake-sdl2-starter.dir/main.cpp.o: CMakeFiles/cmake-sdl2-starter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aliffamir/repos/cmake-sdl2-starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cmake-sdl2-starter.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cmake-sdl2-starter.dir/main.cpp.o -MF CMakeFiles/cmake-sdl2-starter.dir/main.cpp.o.d -o CMakeFiles/cmake-sdl2-starter.dir/main.cpp.o -c /Users/aliffamir/repos/cmake-sdl2-starter/main.cpp
+CMakeFiles/cmake-sdl2-starter.dir/src/main.cpp.o: CMakeFiles/cmake-sdl2-starter.dir/flags.make
+CMakeFiles/cmake-sdl2-starter.dir/src/main.cpp.o: /Users/aliffamir/repos/cmake-sdl2-starter/src/main.cpp
+CMakeFiles/cmake-sdl2-starter.dir/src/main.cpp.o: CMakeFiles/cmake-sdl2-starter.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aliffamir/repos/cmake-sdl2-starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cmake-sdl2-starter.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cmake-sdl2-starter.dir/src/main.cpp.o -MF CMakeFiles/cmake-sdl2-starter.dir/src/main.cpp.o.d -o CMakeFiles/cmake-sdl2-starter.dir/src/main.cpp.o -c /Users/aliffamir/repos/cmake-sdl2-starter/src/main.cpp
 
-CMakeFiles/cmake-sdl2-starter.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cmake-sdl2-starter.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aliffamir/repos/cmake-sdl2-starter/main.cpp > CMakeFiles/cmake-sdl2-starter.dir/main.cpp.i
+CMakeFiles/cmake-sdl2-starter.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cmake-sdl2-starter.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aliffamir/repos/cmake-sdl2-starter/src/main.cpp > CMakeFiles/cmake-sdl2-starter.dir/src/main.cpp.i
 
-CMakeFiles/cmake-sdl2-starter.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cmake-sdl2-starter.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aliffamir/repos/cmake-sdl2-starter/main.cpp -o CMakeFiles/cmake-sdl2-starter.dir/main.cpp.s
+CMakeFiles/cmake-sdl2-starter.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cmake-sdl2-starter.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aliffamir/repos/cmake-sdl2-starter/src/main.cpp -o CMakeFiles/cmake-sdl2-starter.dir/src/main.cpp.s
 
 # Object files for target cmake-sdl2-starter
 cmake__sdl2__starter_OBJECTS = \
-"CMakeFiles/cmake-sdl2-starter.dir/main.cpp.o"
+"CMakeFiles/cmake-sdl2-starter.dir/src/main.cpp.o"
 
 # External object files for target cmake-sdl2-starter
 cmake__sdl2__starter_EXTERNAL_OBJECTS =
 
-cmake-sdl2-starter: CMakeFiles/cmake-sdl2-starter.dir/main.cpp.o
+cmake-sdl2-starter: CMakeFiles/cmake-sdl2-starter.dir/src/main.cpp.o
 cmake-sdl2-starter: CMakeFiles/cmake-sdl2-starter.dir/build.make
-cmake-sdl2-starter: lib/libmylib.a
+cmake-sdl2-starter: /Users/aliffamir/repos/cmake-sdl2-starter/lib/SDL2_image/libSDL2_image.dylib
 cmake-sdl2-starter: CMakeFiles/cmake-sdl2-starter.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/aliffamir/repos/cmake-sdl2-starter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cmake-sdl2-starter"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cmake-sdl2-starter.dir/link.txt --verbose=$(VERBOSE)

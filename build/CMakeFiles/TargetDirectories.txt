@@ -1,6 +1,3 @@
 /Users/aliffamir/repos/cmake-sdl2-starter/build/CMakeFiles/cmake-sdl2-starter.dir
 /Users/aliffamir/repos/cmake-sdl2-starter/build/CMakeFiles/edit_cache.dir
 /Users/aliffamir/repos/cmake-sdl2-starter/build/CMakeFiles/rebuild_cache.dir
-/Users/aliffamir/repos/cmake-sdl2-starter/build/lib/CMakeFiles/mylib.dir
-/Users/aliffamir/repos/cmake-sdl2-starter/build/lib/CMakeFiles/edit_cache.dir
-/Users/aliffamir/repos/cmake-sdl2-starter/build/lib/CMakeFiles/rebuild_cache.dir

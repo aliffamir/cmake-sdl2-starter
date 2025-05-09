@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cmake-sdl2-starter.dir/main.cpp.o"
-  "CMakeFiles/cmake-sdl2-starter.dir/main.cpp.o.d"
+  "CMakeFiles/cmake-sdl2-starter.dir/src/main.cpp.o"
+  "CMakeFiles/cmake-sdl2-starter.dir/src/main.cpp.o.d"
   "cmake-sdl2-starter"
   "cmake-sdl2-starter.pdb"
 )
