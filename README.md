@@ -41,7 +41,7 @@ On my machine I use the following commands:
 ln -s /opt/homebrew/Cellar/sdl2/2.32.6/include/SDL2 ./include/SDL2
 ln -s /opt/homebrew/Cellar/sdl2_image/2.8.8/include/SDL2 ./include/SDL2_image
 ln -s /opt/homebrew/Cellar/sdl2_image/2.8.8/lib ./lib/SDL2_image
-ln -s /opt/homebrew/Cellar/sdl2/2.32.6/include/SDL2 ./include/SDL2
+ln -s /opt/homebrew/Cellar/sdl2/2.32.6/lib ./lib/SDL2
 ```
 
 3. Create a build directory and build the project:
