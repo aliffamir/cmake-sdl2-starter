@@ -69,8 +69,22 @@ int main(int argc, char* args[]) {
             // update the surface
             SDL_UpdateWindowSurface(gWindow);
 
-            // event loop to get window to stay up
-            SDL_Event e; bool quit = false; while( quit == false ){ while( SDL_PollEvent( &e ) ){ if( e.type == SDL_QUIT ) quit = true; } }
+            // main loop flag
+            bool quit = false; 
+
+            // event handler
+            SDL_Event e; 
+
+            while( quit == false ) { 
+                // this is our event loop
+                // handle events on queue
+                while( SDL_PollEvent( &e ) ) { 
+                    // user requests quit
+                    if( e.type == SDL_QUIT ) {
+                        quit = true; 
+                    }
+                } 
+            }
         }
     }
 
